@@ -1,0 +1,32 @@
+{
+  "Collaborators": [
+    {
+      "firstName": "amiraa",
+      "lastName": "test1",
+      "email": "kerrou999@gmail.com",
+      "nationality": "Tunisia",
+      "gender": "Female"
+    },
+    {
+      "firstName": "amira",
+      "lastName": "test2",
+      "email": "kerrou98@gmail.com",
+      "nationality": "Tunisia",
+      "gender": "male"
+    },
+    {
+      "firstName": "amira",
+      "lastName": "test2",
+      "email": "kerrou789@gmail.com",
+      "nationality": "Tunisia",
+      "gender": "male"
+    },
+    {
+      "firstName": "amira",
+      "lastName": "test2",
+      "email": "aamira5544@gmail.com",
+      "nationality": "Tunisia",
+      "gender": "male"
+    }
+  ]
+}

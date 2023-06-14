@@ -1,0 +1,18 @@
+{
+  "Collaborators": [
+    {
+      "firstName": "amiraa",
+      "lastName": "test1",
+      "email": "kerrou23@gmail.com",
+      "nationality": "Tunisia",
+      "gender": "Female"
+    },
+    {
+      "firstName": "amira",
+      "lastName": "test2",
+      "email": "aamira0000003258963@gmail.com",
+      "nationality": "Tunisia",
+      "gender": "male"
+    }
+  ]
+}

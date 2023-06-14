@@ -1,0 +1,17 @@
+Le 11/05/2023 : modifiée
+
+framework avec :
+Allure Capture en cas de fail
+pages : main
+tasks : Common steps + screenshot
+Read data of new collaborator and URL of the hub from Data json file
+Combine baseSuiteSetup and grid config in BaseSetup
++ page factory modifications
+
+
+modification le dimanche 04 juin :
+1/navigate to collab et HR space read from tasks not from locators .
+2/ read the url of stark from the appProperties file .
+3/ hub url read from yaml file ( deja )
+4/in addcollaborator function in the test case we just called it and pass the name of the collaborator.
+5/ add formation package tests
