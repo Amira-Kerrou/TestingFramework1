@@ -1,0 +1,14 @@
+utils/ScreenshotUtils.class
+tasks/collaborators/CollabTasks.class
+utils/ReadJsonFile.class
+pages/HR/collaborators/CollabLocators.class
+pages/HR/formations/CatalogLoc.class
+tasks/formation/CommonStepsFormations.class
+pages/authentification/Authentification.class
+pages/HR/formations/RequestsLoc.class
+base/BaseSetup$Browsers.class
+base/BaseSetup$1.class
+pages/HR/formations/SessionsLoc.class
+base/BaseSetup.class
+pages/HR/contract/Contract.class
+tasks/contract/ContractTasks.class
