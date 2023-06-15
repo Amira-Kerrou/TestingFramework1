@@ -32,7 +32,7 @@ public class DeleteCollaborator extends CollabTasks {
     @DataProvider(name = "DataProvider")
     public Object[][] getItemsDataProvider() throws IOException {
         List<CollaboratorModel> itemList = DataProviderUtil.getListFromJsonFile(
-                CollaboratorsConstants.RELATIVE_PATH + "collaboratorData1.json", "Collaborators", CollaboratorModel.class);
+                CollaboratorsConstants.RELATIVE_PATH + "collaboratorData.json", "Collaborators", CollaboratorModel.class);
         return new Object[][]{{itemList}};
     }
 

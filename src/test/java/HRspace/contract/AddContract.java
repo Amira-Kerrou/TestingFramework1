@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import tasks.authentification.Authentification;
-import tasks.collaborators.CollabTasks;
 import tasks.contract.ContractTasks;
 import utils.DataProviderUtil;
 import utils.ScreenshotUtils;
@@ -31,7 +30,7 @@ public class AddContract extends ContractTasks {
     @DataProvider(name = "DataProvider")
     public Object[][] getItemsDataProvider() throws IOException {
         List<CollaboratorModel> itemList = DataProviderUtil.getListFromJsonFile(
-                CollaboratorsConstants.RELATIVE_PATH + "collaboratorData1.json", "Collaborators", CollaboratorModel.class);
+                CollaboratorsConstants.RELATIVE_PATH + "collaboratorData.json", "Collaborators", CollaboratorModel.class);
         return new Object[][] { { itemList } };
     }
     @Test(description = "Add collaborator using data provider")
