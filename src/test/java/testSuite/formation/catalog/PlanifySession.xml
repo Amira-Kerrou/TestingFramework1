@@ -5,7 +5,7 @@
         <parameter name="browser" value="REMOTE_CHROME"/>
         <parameter name="timeOut" value="180000"/>
         <classes>
-            <class name="Catalog.Formations.HRspace.Stark.PlanifySession"/>
+            <class name="HRspace.formations.catalog.PlanifySession"/>
         </classes>
 
     </test> <!-- Test -->

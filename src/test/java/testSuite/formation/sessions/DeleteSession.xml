@@ -9,4 +9,12 @@
         </classes>
 
     </test> <!-- Test -->
+    <test name="Data attributes test2">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="Sessions.Formations.HRspace.Stark.EditSession"/>
+        </classes>
+
+    </test> <!-- Test -->
 </suite>

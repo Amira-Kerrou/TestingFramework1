@@ -5,7 +5,6 @@ import org.yaml.snakeyaml.Yaml;
 import base.BaseSetup;
 import pages.HR.collaborators.CollabLocators;
 import pages.authentification.Authentification;
-import tasks.authentification.authentification;
 import tasks.collaborators.CollabTasks;
 import utils.ScreenshotUtils;
 import io.qameta.allure.*;
@@ -43,7 +42,7 @@ public class ExportExel extends CollabLocators {
         CollabTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollabTasks.class);
         tasks.navigateToHRSpacePage();
         tasks.navigateToCollaboratorPage();
-        //tasks.exportExel();
+        tasks.exportExel();
     }
 
     @AfterMethod(alwaysRun = true)

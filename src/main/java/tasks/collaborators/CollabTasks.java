@@ -1,30 +1,24 @@
 package tasks.collaborators;
 
-import Objects.CollaboratorModel;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.openqa.selenium.By;
+import objects.CollaboratorModel;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.HR.collaborators.CollabLocators;
 import base.BaseSetup;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
-
-import java.io.FileReader;
-import java.time.Duration;
-import java.util.HashMap;
+import pages.HR.contract.ContractLocators;
 
 public class CollabTasks extends BaseSetup {
     public CollabTasks() {
     }
 
-    CollabLocators collaboratorWebElements = PageFactory.initElements(  BaseSetup.getDriver(), CollabLocators.class);
-    CollaboratorModel collabModel = PageFactory.initElements(  BaseSetup.getDriver(), CollaboratorModel.class);
-    
+    CollabLocators collaboratorWebElements = PageFactory.initElements(BaseSetup.getDriver(), CollabLocators.class);
+
+
+    ContractLocators contractWebElements = new ContractLocators();
+
+
 
     public void deleteCollaborator() {
         collaboratorWebElements.deleteButton.click();
@@ -44,7 +38,7 @@ public class CollabTasks extends BaseSetup {
         collabModel.getGender();
         collabModel.getEmail();
         collabModel.getNationality();*/
-        JavascriptExecutor js = (JavascriptExecutor)   BaseSetup.getDriver();
+        JavascriptExecutor js = (JavascriptExecutor) BaseSetup.getDriver();
         js.executeScript("window.scrollBy(0, 250)", "");
         collaboratorWebElements.clickSave();
         collaboratorWebElements.clickYes();
@@ -74,6 +68,7 @@ public class CollabTasks extends BaseSetup {
 
     }
 
+
     public void exportExel() {
         collaboratorWebElements.exportExel.click();
         collaboratorWebElements.downloadFile.click();
@@ -83,4 +78,6 @@ public class CollabTasks extends BaseSetup {
     public void changeMode() {
         collaboratorWebElements.mode.click();
     }
+
+
 }

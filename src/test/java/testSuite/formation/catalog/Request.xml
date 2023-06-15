@@ -5,8 +5,8 @@
         <parameter name="browser" value="REMOTE_CHROME"/>
         <parameter name="timeOut" value="180000"/>
         <classes>
-            <class name="Catalog.Formations.HRspace.Stark.Request"/>
+            <class name="HRspace.formations.catalog.Request"/>
         </classes>
 
-    </test> <!-- Test -->
+    </test>
 </suite>
