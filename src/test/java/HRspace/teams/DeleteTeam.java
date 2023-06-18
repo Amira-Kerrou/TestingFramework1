@@ -7,7 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import tasks.authentification.Authentification;
+import tasks.authentification.AuthentificationTasks;
 import tasks.formation.FormationTasks;
 import utils.ScreenshotUtils;
 
@@ -17,7 +17,7 @@ public class DeleteTeam {
     @Parameters("browser")
     @BeforeClass(alwaysRun = true)
     public void setupTest(final String browser) throws FileNotFoundException {
-        Authentification login = PageFactory.initElements(BaseSetup.getDriver(), Authentification.class);
+        AuthentificationTasks login = PageFactory.initElements(BaseSetup.getDriver(), AuthentificationTasks.class);
         login.setupTest(browser);
     }
 

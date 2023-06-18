@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Map;
 
-public class Authentification {
+public class AuthentificationTasks {
 
     public void setupTest(final String browser) throws FileNotFoundException {
 

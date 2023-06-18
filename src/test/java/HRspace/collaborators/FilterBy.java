@@ -3,7 +3,7 @@ package HRspace.collaborators;
 import pages.authentification.AuthentificationLocators;
 import base.BaseSetup;
 import pages.HR.collaborators.CollabLocators;
-import tasks.collaborators.CollabTasks;
+import tasks.collaborators.CollaboratorTasks;
 import utils.ScreenshotUtils;
 import io.qameta.allure.*;
 import org.openqa.selenium.support.PageFactory;
@@ -32,7 +32,7 @@ public class FilterBy extends CollabLocators {
 
     public void filter() {
 
-        CollabTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollabTasks.class);
+        CollaboratorTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollaboratorTasks.class);
         }
 
 

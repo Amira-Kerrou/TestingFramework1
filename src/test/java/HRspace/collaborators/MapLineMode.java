@@ -7,8 +7,8 @@ import io.qameta.allure.*;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import tasks.authentification.Authentification;
-import tasks.collaborators.CollabTasks;
+import tasks.authentification.AuthentificationTasks;
+import tasks.collaborators.CollaboratorTasks;
 
 import java.io.FileNotFoundException;
 
@@ -20,11 +20,11 @@ public class MapLineMode extends CollabLocators {
     @Parameters("browser")
     @BeforeClass(alwaysRun = true)
     public void setupTest(final String browser) throws FileNotFoundException {
-        Authentification login = PageFactory.initElements(  BaseSetup.getDriver(), Authentification.class);
+        AuthentificationTasks login = PageFactory.initElements(  BaseSetup.getDriver(), AuthentificationTasks.class);
         login.setupTest(browser);}
     @Test
     public void mapLineMode() {
-        CollabTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollabTasks.class);
+        CollaboratorTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollaboratorTasks.class);
         tasks.navigateToHRSpacePage();
         tasks.navigateToCollaboratorPage();
         tasks.changeMode();

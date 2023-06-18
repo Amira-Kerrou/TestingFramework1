@@ -5,7 +5,7 @@ import org.yaml.snakeyaml.Yaml;
 import base.BaseSetup;
 import pages.HR.collaborators.CollabLocators;
 import pages.authentification.AuthentificationLocators;
-import tasks.collaborators.CollabTasks;
+import tasks.collaborators.CollaboratorTasks;
 import utils.ScreenshotUtils;
 import io.qameta.allure.*;
 import org.openqa.selenium.support.PageFactory;
@@ -39,7 +39,7 @@ public class ExportExel extends CollabLocators {
         authLocators.login();}
     @Test
     public void exportExel(){
-        CollabTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollabTasks.class);
+        CollaboratorTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollaboratorTasks.class);
         tasks.navigateToHRSpacePage();
         tasks.navigateToCollaboratorPage();
         tasks.exportExel();

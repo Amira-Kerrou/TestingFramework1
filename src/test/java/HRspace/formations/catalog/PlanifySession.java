@@ -6,7 +6,7 @@ import io.qameta.allure.Feature;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import tasks.authentification.Authentification;
+import tasks.authentification.AuthentificationTasks;
 import tasks.formation.FormationTasks;
 import utils.ScreenshotUtils;
 
@@ -20,7 +20,7 @@ public class PlanifySession extends FormationTasks {
     @Parameters("browser")
     @BeforeClass(alwaysRun = true)
     public void setupTest(final String browser) throws FileNotFoundException {
-        Authentification login = PageFactory.initElements(BaseSetup.getDriver(), Authentification.class);
+        AuthentificationTasks login = PageFactory.initElements(BaseSetup.getDriver(), AuthentificationTasks.class);
         login.setupTest(browser);
     }
 

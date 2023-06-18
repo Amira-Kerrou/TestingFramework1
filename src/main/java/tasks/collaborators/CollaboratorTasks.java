@@ -9,8 +9,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import pages.HR.contract.ContractLocators;
 
-public class CollabTasks extends BaseSetup {
-    public CollabTasks() {
+public class CollaboratorTasks extends BaseSetup {
+    public CollaboratorTasks() {
     }
 
     CollabLocators collaboratorWebElements = PageFactory.initElements(BaseSetup.getDriver(), CollabLocators.class);

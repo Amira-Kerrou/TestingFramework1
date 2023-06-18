@@ -7,8 +7,8 @@ import io.qameta.allure.Feature;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import tasks.authentification.Authentification;
-import tasks.collaborators.CollabTasks;
+import tasks.authentification.AuthentificationTasks;
+import tasks.collaborators.CollaboratorTasks;
 import tasks.contract.ContractTasks;
 import utils.DataProviderUtil;
 import utils.ScreenshotUtils;
@@ -20,12 +20,12 @@ import java.util.List;
 
 @Epic("Stark HRM")
 @Feature("Collaborators")
-public class Update extends CollabTasks {
+public class Update extends CollaboratorTasks {
 
     @Parameters("browser")
     @BeforeClass(alwaysRun = true)
     public void setupTest(final String browser) throws FileNotFoundException {
-        Authentification login = PageFactory.initElements(  BaseSetup.getDriver(), Authentification.class);
+        AuthentificationTasks login = PageFactory.initElements(  BaseSetup.getDriver(), AuthentificationTasks.class);
         login.setupTest(browser);
     }
     @DataProvider(name = "DataProvider")

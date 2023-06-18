@@ -10,7 +10,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.yaml.snakeyaml.Yaml;
 import pages.authentification.AuthentificationLocators;
-import tasks.collaborators.CollabTasks;
+import tasks.collaborators.CollaboratorTasks;
 import utils.DataProviderUtil;
 import utils.ScreenshotUtils;
 
@@ -23,7 +23,7 @@ import java.util.Map;
 
 @Epic("Stark HRM")
 @Feature("Collaborators")
-public class SearchForCollaborator extends CollabTasks {
+public class SearchForCollaborator extends CollaboratorTasks {
 
     @Parameters("browser")
     @BeforeClass(alwaysRun = true)
@@ -55,7 +55,7 @@ public class SearchForCollaborator extends CollabTasks {
 
     @Test(description = "Add collaborator using data provider", dataProvider = "DataProvider")
     public void collabPage(List<CollaboratorModel> itemList) {
-        CollabTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollabTasks.class);
+        CollaboratorTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollaboratorTasks.class);
         tasks.navigateToHRSpacePage();
         tasks.navigateToCollaboratorPage();
         tasks.addNewCollaborator(itemList.get(0));
