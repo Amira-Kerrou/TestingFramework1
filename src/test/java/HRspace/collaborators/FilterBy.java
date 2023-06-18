@@ -1,6 +1,6 @@
 package HRspace.collaborators;
 
-import pages.authentification.Authentification;
+import pages.authentification.AuthentificationLocators;
 import base.BaseSetup;
 import pages.HR.collaborators.CollabLocators;
 import tasks.collaborators.CollabTasks;
@@ -24,7 +24,7 @@ public class FilterBy extends CollabLocators {
 
     @BeforeClass(alwaysRun = true)
     public void crendentials(){
-        Authentification  authLocators = PageFactory.initElements(BaseSetup.getDriver(), Authentification.class);
+        AuthentificationLocators authLocators = PageFactory.initElements(BaseSetup.getDriver(), AuthentificationLocators.class);
         authLocators.login();
     }
 

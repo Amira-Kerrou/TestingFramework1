@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.yaml.snakeyaml.Yaml;
-import pages.authentification.Authentification;
+import pages.authentification.AuthentificationLocators;
 import tasks.collaborators.CollabTasks;
 import utils.DataProviderUtil;
 import utils.ScreenshotUtils;
@@ -35,7 +35,7 @@ public class SearchForCollaborator extends CollabTasks {
         BaseSetup.createDriver(Browsers.valueOf(browser.toUpperCase()));
         // BaseSetup.getDriver()=getDriver();
         BaseSetup.getDriver().navigate().to(url);
-        Authentification authLocators = PageFactory.initElements(BaseSetup.getDriver(), Authentification.class);
+        AuthentificationLocators authLocators = PageFactory.initElements(BaseSetup.getDriver(), AuthentificationLocators.class);
         authLocators.login();
     }
 

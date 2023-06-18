@@ -4,7 +4,7 @@ import org.testng.annotations.Parameters;
 import org.yaml.snakeyaml.Yaml;
 import base.BaseSetup;
 import pages.HR.collaborators.CollabLocators;
-import pages.authentification.Authentification;
+import pages.authentification.AuthentificationLocators;
 import tasks.collaborators.CollabTasks;
 import utils.ScreenshotUtils;
 import io.qameta.allure.*;
@@ -35,7 +35,7 @@ public class ExportExel extends CollabLocators {
         BaseSetup.createDriver(Browsers.valueOf(browser.toUpperCase()));
 
         BaseSetup.getDriver().navigate().to(url);
-        Authentification authLocators = PageFactory.initElements(  BaseSetup.getDriver(), Authentification.class);
+        AuthentificationLocators authLocators = PageFactory.initElements(  BaseSetup.getDriver(), AuthentificationLocators.class);
         authLocators.login();}
     @Test
     public void exportExel(){

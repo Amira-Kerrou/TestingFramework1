@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import base.BaseSetup;
 
 
-public class Authentification extends BaseSetup {
+public class AuthentificationLocators extends BaseSetup {
 
-    public Authentification() {
+    public AuthentificationLocators() {
     }
 
     @FindBy(xpath = "//input[@formcontrolname='Email']")
