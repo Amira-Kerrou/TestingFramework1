@@ -28,8 +28,6 @@ public class AssignMembers {
         tasks.searchTraining();
 
     }
-
-
     @AfterMethod
     public void afterMethod(ITestResult result) throws Exception {if (!result.isSuccess()) {
         ScreenshotUtils.takeScreenshot(BaseSetup.getDriver());}}

@@ -2,6 +2,8 @@ package objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CollaboratorModel {
+
+
     @JsonProperty("firstName")
     private String firstName;
 

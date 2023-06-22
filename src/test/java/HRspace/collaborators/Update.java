@@ -39,7 +39,7 @@ public class Update extends CollaboratorTasks {
         ContractTasks tasks = PageFactory.initElements(  BaseSetup.getDriver(), ContractTasks.class);
         tasks.navigateToHRSpacePage();
         tasks.navigateToContractPage();
-        tasks.addNewContract();
+
 
 
     }

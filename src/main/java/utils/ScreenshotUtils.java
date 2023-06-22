@@ -10,7 +10,6 @@ import java.io.IOException;
 
 public class ScreenshotUtils {
     static WebDriver driver= BaseSetup.getDriver();
-
     public static void takeScreenshot(WebDriver driver1){
 
         byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
@@ -19,3 +18,5 @@ public class ScreenshotUtils {
     }
 
 }
+
+

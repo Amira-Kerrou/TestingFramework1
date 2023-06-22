@@ -25,7 +25,7 @@ public class AdvancedSearch {
     public void catalogPage(){
         FormationTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), FormationTasks.class);
         tasks.navigateToCatalogSpace();
-        tasks.searchTraining();
+       tasks.searchTraining();
 
     }
 

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Stark using Selenium" parallel="tests">
+
+    <test name="Test 1">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.AddCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 2">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.contract.AddContract"/>
+        </classes>
+    </test>
+    <test name="Test 3">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.MapLineMode"/>
+        </classes>
+    </test>
+    <test name="Test 4">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.ExportExel"/>
+        </classes>
+    </test>
+    <test name="Test 5">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.DeleteCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 6">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.SearchForCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 7">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.AddCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 8">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.contract.AddContract"/>
+        </classes>
+    </test>
+    <test name="Test 9">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.MapLineMode"/>
+        </classes>
+    </test>
+    <test name="Test 10">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.ExportExel"/>
+        </classes>
+    </test>
+    <test name="Test 11">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.DeleteCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 12">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.SearchForCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 13">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.SearchForCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 14">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.AddCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 15">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.contract.AddContract"/>
+        </classes>
+    </test>
+    <test name="Test 16">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.MapLineMode"/>
+        </classes>
+    </test>
+    <test name="Test 17">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.ExportExel"/>
+        </classes>
+    </test>
+    <test name="Test 18">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.DeleteCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 19">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.SearchForCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 20">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.AddCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 21">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.contract.AddContract"/>
+        </classes>
+    </test>
+    <test name="Test 22">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.MapLineMode"/>
+        </classes>
+    </test>
+    <test name="Test 23">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.ExportExel"/>
+        </classes>
+    </test>
+    <test name="Test 24">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.DeleteCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 25">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.SearchForCollaborator"/>
+        </classes>
+    </test>
+    <test name="Test 26">
+        <parameter name="browser" value="REMOTE_CHROME"/>
+        <parameter name="timeOut" value="180000"/>
+        <classes>
+            <class name="HRspace.collaborators.SearchForCollaborator"/>
+        </classes>
+    </test>
+
+
+</suite>
+
+
+
+

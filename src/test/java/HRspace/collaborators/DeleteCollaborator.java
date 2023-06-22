@@ -41,7 +41,7 @@ public class DeleteCollaborator extends CollaboratorTasks {
         CollaboratorTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), CollaboratorTasks.class);
         tasks.navigateToHRSpacePage();
         tasks.navigateToCollaboratorPage();
-        tasks.addNewCollaborator(itemList.get(1));
+       tasks.addNewCollaborator(itemList.get(1));
         tasks.searchCollaborator(itemList.get(1).getFirstName() + itemList.get(1).getLastName());
         tasks.deleteCollaborator();
     }

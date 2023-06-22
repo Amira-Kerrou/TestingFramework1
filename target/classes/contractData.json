@@ -2,7 +2,11 @@
 {
 "contract": [
 {
-  "employee": "aaaa KKKK",
-  "type": "CDD"
+  "employee": "aaa KKK",
+  "type": "CDD",
+  "salaryStructure": "CDD",
+  "socialContribution": "NORMAL"
 
-}]}
+}]
+
+}

@@ -1,15 +1,14 @@
 package HRspace.contract;
-
 import objects.CollaboratorModel;
 import base.BaseSetup;
 import base.constants.CollaboratorsConstants;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
+import objects.ContractModel;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import tasks.authentification.AuthentificationTasks;
-import tasks.collaborators.CollaboratorTasks;
 import tasks.contract.ContractTasks;
 import utils.DataProviderUtil;
 import utils.ScreenshotUtils;
@@ -21,7 +20,7 @@ import java.util.List;
 
 @Epic("Stark HRM")
 @Feature("Collaborators")
-public class ContractFilter extends CollaboratorTasks {
+public class ContractFilter extends ContractTasks {
 
     @Parameters("browser")
     @BeforeClass(alwaysRun = true)
@@ -31,22 +30,22 @@ public class ContractFilter extends CollaboratorTasks {
     }
     @DataProvider(name = "DataProvider")
     public Object[][] getItemsDataProvider() throws IOException {
-        List<CollaboratorModel> itemList = DataProviderUtil.getListFromJsonFile(
-                CollaboratorsConstants.RELATIVE_PATH + "collaboratorData.json", "Collaborators", CollaboratorModel.class);
-        return new Object[][] { { itemList } };
+        List<ContractModel> itemList = DataProviderUtil.getListFromJsonFile(
+                CollaboratorsConstants.RELATIVE_PATH + "contractData.json", "contract", ContractModel.class); return new Object[][] { { itemList } };
     }
-    @Test(description = "Add collaborator using data provider")
+    @Test(description = "Add new contract using data provider")
     public void contractPage() {
         ContractTasks tasks = PageFactory.initElements(  BaseSetup.getDriver(), ContractTasks.class);
+        tasks.navigateToHRSpacePage();
+        tasks.navigateToContractPage();
 
 
 
     }
     @AfterMethod
-    public void afterMethod(ITestResult result) throws Exception {
-        if (!result.isSuccess()) {ScreenshotUtils.takeScreenshot(  BaseSetup.getDriver());
-        }
+    public void afterMethod(ITestResult result) throws Exception {if (!result.isSuccess()) {ScreenshotUtils.takeScreenshot(  BaseSetup.getDriver());}
     }
 }
+
 
 

@@ -2,6 +2,7 @@ package tasks.formation;
 
 
 import base.BaseSetup;
+import objects.FormationModel;
 import org.openqa.selenium.support.PageFactory;
 import pages.HR.formations.CatalogLocators;
 import pages.HR.formations.RequestsLocators;
@@ -16,12 +17,13 @@ public class FormationTasks extends BaseSetup {
     SessionsLocators SessionsWebElements = PageFactory.initElements(BaseSetup.getDriver(), SessionsLocators.class);
 
 
-    public void AddNewCtalog() {
+    public void AddNewCtalog(FormationModel catalog) {
         catalogWebElements.addCatalog.click();
-        catalogWebElements.title.sendKeys("Catalog 1 ");
-        catalogWebElements.description.sendKeys("first catalog for testing");
+        catalogWebElements.title.sendKeys(catalog.getTitle());
+        catalogWebElements.description.sendKeys(catalog.getDescription());
         catalogWebElements.saveCatalog.click();
     }
+
 
 
     public void navigateToCatalogSpace() {

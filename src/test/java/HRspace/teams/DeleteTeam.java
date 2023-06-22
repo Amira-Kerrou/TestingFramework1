@@ -24,7 +24,7 @@ public class DeleteTeam {
     @Test(description = "Add new training in the catalog")
     public void catalogPage(){
         FormationTasks tasks = PageFactory.initElements(BaseSetup.getDriver(), FormationTasks.class);
-        tasks.navigateToCatalogSpace();
+       tasks.navigateToCatalogSpace();
         tasks.searchTraining();
 
     }

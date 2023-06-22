@@ -7,6 +7,11 @@ public class ContractModel {
 
     @JsonProperty("type")
     private String type;
+    @JsonProperty("salaryStructure")
+    private String salaryStructure;
+    @JsonProperty("socialContribution")
+    private String socialContribution;
+
 
     public String getEmployee() {
         return employee;
@@ -15,6 +20,15 @@ public class ContractModel {
     public String getType() {
         return type;
     }
+    public String getsalaryStructure() {
+        return salaryStructure;
+    }
+    public String getsocialContribution() {
+        return socialContribution;
+    }
+
+
+
 
 
 

@@ -42,14 +42,14 @@ public class AddCollaborator extends CollaboratorTasks {
         tasks.navigateToHRSpacePage();
         tasks.navigateToCollaboratorPage();
         tasks.addNewCollaborator(itemList.get(1));
+
         tasks.searchCollaborator(itemList.get(1).getFirstName() + itemList.get(1).getLastName());
     }
 
 
     @AfterMethod
     public void afterMethod(ITestResult result) throws Exception {
-        if (!result.isSuccess()) {
-            ScreenshotUtils.takeScreenshot(BaseSetup.getDriver());
+        if (!result.isSuccess()) {ScreenshotUtils.takeScreenshot(BaseSetup.getDriver());
         }
     }
 }
