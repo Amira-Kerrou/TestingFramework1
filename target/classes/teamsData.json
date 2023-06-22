@@ -1,0 +1,13 @@
+
+{
+  "team": [
+    {
+      "name": "test team",
+      "teamManager": "aaa AAA",
+      "teamCode": "123",
+      "creationDate": "06072023",
+      "teamType": "test"
+
+    }]
+
+}
